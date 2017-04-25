@@ -1,0 +1,31 @@
+{
+  "name": "frontend-engineer-project",
+  "version": "0.0.0",
+  "homepage": "https://github.com/wongasta/frontend-engineer-project",
+  "description": "Front end",
+  "main": "app.js",
+  "authors": [
+    "Yixin Xia"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.6.4",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular-route": "^1.6.4",
+    "angular-bootstrap": "^2.5.0",
+    "lodash": "^4.17.4",
+    "ng-dialog": "^1.1.0",
+    "AngularJS-Toaster": "^2.1.0",
+    "moment": "^2.18.1",
+    "angular-local-storage": "^0.5.2",
+    "angular-messages": "^1.6.4"
+  }
+}

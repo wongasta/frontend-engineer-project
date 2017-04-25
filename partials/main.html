@@ -1,0 +1,9 @@
+<div ng-controller="mainController" class="main-container row">
+  <div class="col-md-12 text-center button-container">
+    <button type="button" class="btn sfa-btn" ng-click="startSession()">Start Form</button>
+  </div>
+    <div class="col-md-12 text-center result-container" ng-show="formResult">
+        <h4><i class="fa fa-check-square-o" aria-hidden="true"></i> Results</h4>
+        <pre>{{formResult | prettyJSON}}</pre>
+    </div>
+</div>

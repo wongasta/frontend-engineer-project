@@ -1,0 +1,86 @@
+body{
+  background: #f9f9f9;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.main-container{
+  .button-container{
+    margin-top:20%;
+  }
+  .result-container{
+    color: #9c867b;
+    padding-top:50px;
+    width: 100%;
+  }
+}
+
+.sfa-btn,.sfa-btn:hover,.sfa-btn:focus,.sfa-btn:active{
+  background-color: #ff851f;
+  border-color: #e56800;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.form-dialog{
+  .ngdialog-content{
+    background: #f9f9f9;
+    width: 1000px !important;
+    height: 550px;
+
+    .form-container{
+
+      .inputs{
+        padding: 10px 30px;
+        .form-item{
+          margin-bottom: 20px;
+          input{
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+          }
+
+          .state{
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+          }
+        }
+        .error-message{
+          color: #e56800;
+          font-size: 10px;
+        }
+        .error_border{
+          border: 2px solid #e56800;
+        }
+        .correct_border{
+
+        }
+      }
+
+      .pic{
+        img{
+          width: 90%;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-dialog{
+    .ngdialog-content {
+      height: 1200px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .form-dialog{
+    .ngdialog-content {
+      height: 900px;
+    }
+  }
+}

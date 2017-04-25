@@ -1,0 +1,59 @@
+<div class="form-container row">
+  <form name="pf" class="form-sign-up" id="form-project">
+    <div class="col-md-6 inputs">
+      <div class="form-item">
+        <input class="form_input" ng-class="signUpCheck(pf.pf_name)" id="pf_name" name="pf_name" type="text" placeholder="Name" ng-model="fo.name" ng-change="evenListenerLog(fo.name)" required />
+        <div class="error-message" ng-show="pf.pf_name.$dirty" ng-messages="pf.pf_name.$error">
+          <div ng-messages-include="partials/messages.html"></div>
+        </div>
+      </div>
+      <div class="form-item">
+        <input class="form_input" ng-class="signUpCheck(pf.pf_email)" id="pf_email" name="pf_email" type="email" placeholder="Email" ng-model="fo.email" required />
+        <div class="error-message" ng-show="pf.pf_email.$dirty" ng-messages="pf.pf_email.$error">
+          <div ng-messages-include="partials/messages.html"></div>
+        </div>
+      </div>
+      <div class="form-item">
+        <input class="form_input" ng-class="signUpCheck(pf.pf_phone)" id="pf_phone" name="pf_phone" type="text" placeholder="Phone 111-111-1111" ng-model="fo.phone" ng-pattern="phoneRegex" required />
+        <div class="error-message" ng-show="pf.pf_phone.$dirty" ng-messages="pf.pf_phone.$error">
+          <div ng-messages-include="partials/messages.html"></div>
+        </div>
+      </div>
+      <div class="form-item">
+        <input class="form_input" ng-class="signUpCheck(pf.pf_address)" id="pf_address" name="pf_address" type="text" placeholder="Address" ng-model="fo.address" required />
+        <div class="error-message" ng-show="pf.pf_address.$dirty" ng-messages="pf.pf_address.$error">
+          <div ng-messages-include="partials/messages.html"></div>
+        </div>
+      </div>
+      <div class="form-item">
+        <input class="form_input" ng-class="signUpCheck(pf.pf_city)" id="pf_city" name="pf_city" type="text" placeholder="City" ng-model="fo.city" required />
+        <div class="error-message" ng-show="pf.pf_city.$dirty" ng-messages="pf.pf_city.$error">
+          <div ng-messages-include="partials/messages.html"></div>
+        </div>
+      </div>
+      <div class="form-item form-double-item">
+        <div class="col-md-6">
+          <select class="form_input state" ng-class="signUpCheck(pf.pf_state)" id="pf_state" name="pf_state" ng-model="fo.state" ng-include="'partials/form-states.html'" required /></select>
+          <div class="error-message" ng-show="pf.pf_state.$dirty" ng-messages="pf.pf_state.$error">
+            <div ng-messages-include="partials/messages.html"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input class="form_input" ng-class="signUpCheck(pf.pf_zip)" id="pf_zip" name="pf_zip" type="text" placeholder="Zip" ng-model="fo.zip" ng-pattern="zipRegex" required />
+          <div class="error-message" ng-show="pf.pf_zip.$dirty" ng-messages="pf.pf_zip.$error">
+            <div ng-messages-include="partials/messages.html"></div>
+          </div>
+        </div>
+      </div>
+      <div class="form-item">
+        
+      </div>
+    </div>
+    <div class="col-md-6 pic">
+      <img ng-src="img/img{{session}}.jpg" alt="pic" />
+      <div class="text-center button-container">
+        <button type="button" class="btn sfa-btn" ng-click="submitInfo(pf) && confirm(fo)">Submit Form</button>
+      </div>
+    </div>
+  </form>
+</div>
